@@ -15,7 +15,7 @@ const WeatherCard = ({ weather }) => {
       <h1>Weather App</h1>
       <section className='card__city' >
         <h2 className='card__city-title' >{`${weather?.name}, ${weather?.sys.country}`}</h2>
-        <h2 className='card__city-temperature'>Temperatura {changeTemp ? `${unitTempC} °C` : `${unitTempF} °F`}</h2>
+        <h2 className='card__city-temperature'>Temperature {changeTemp ? `${unitTempC} °C` : `${unitTempF} °F`}</h2>
       </section>
       <section className='card__weather-time'>
         <img src={icon} alt="icon-weather" className='card__weather-icon' />
